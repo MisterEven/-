@@ -1,49 +1,88 @@
+<!DOCTYPE html>
 <html>
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Резюме</title>
+    </head>
+    <body>
+        <table cellspacing="10">
+            <tr>
+                <td><img src="Обезьянка.jpg" width="200" alt="Тут моя фотка"></td>
+                <td> <p>Я<em><strong> Пользователь Интернета</strong></em></p></td>
+            </tr>
+        </table>
+        
+        <hr>
 
+        <h3>Мои соц.сети</h3>
+        <ul type="disk">
+            <li><a href="https://t.me/mistereven" target="_blank">Мой телеграмм</a></li>
+            
+        </ul>
 
-</head>
-<body>
-<h1>Как же так</h1>
+        <hr>
 
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-</body>
+        <h2>Мои хобби</h2>
+        <ol type="I">
+            <li>Спорт</li>
+            <li>Обучение</li>
+            <li>Прогулка</li>
+            <li>Путешествия</li>
+        </ol>
+
+        <hr>
+
+        <h3>Опыт работы</h3>
+        <table>
+                <tr>
+                    <th>Место работы</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+                <tr>
+                    <td>Зоопарк</td>
+                    <td>Уборщик</td>
+                    <td>2016 - 2017</td>
+                </tr>
+                <tr>
+                    <td>Зоопарк</td>
+                    <td>Прикормщик</td>
+                    <td>2018 - 2020</td>
+                </tr>
+            
+        </table>
+    </body>
+
+    <hr>
+
+    <h2>Связаться со мной</h2>
+
+    <form action="/">
+        <label for="name">Ваше имя :</label>
+        <input type="text" id="name" placeholder="Начните вводить имя...">
+        
+<br>
+
+        <label for="email">Ваш Email::</label>
+        <input type="email" id="email" placeholder="Введите email...">
+
+        <input type="date">
+        <input type="color">
+        <input type="password">
+        <input type="checkbox">
+        <input type="radio">
+
+        <br>
+
+        <label for="text">Ваше сообщение:</label>
+
+        <br>
+
+        <textarea name="" id="text" rows="3" cols="20"></textarea>
+
+        
+        <br>
+        
+        <input type="submit" value="Связаться!">
+    </form>
 </html>
-
